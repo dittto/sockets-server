@@ -41,7 +41,7 @@ public class ClientManager : MonoBehaviour
         return clientList;
     }
     
-	private void Update ()
+    private void Update ()
     {
         randomPos = new Vector2(Random.value, Random.value);
 
@@ -57,5 +57,5 @@ public class ClientManager : MonoBehaviour
 
             clientPos[clientId] = new Vector2(((clientObj[clientId].transform.position.x / map.transform.localScale.x) * -1f) + 0.5f, (clientObj[clientId].transform.position.z / map.transform.localScale.z) + 0.5f);
         }
-	}
+    }
 }
